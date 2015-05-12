@@ -1,0 +1,39 @@
+/**
+ * Created by i on 5/12/2015.
+ */
+public class Komputer {
+    public int prosesor;
+    public int memori;
+    public int storage;
+
+
+    public Komputer() {
+        prosesor = 500;
+        System.out.println("Kecepatan prosesor komputer:" + prosesor);
+
+
+    }
+}
+class notebook14 extends Komputer{
+    public int baterai;
+
+        public notebook14 (int a, int b, int c, int d) {
+            prosesor = a;
+            memori = b;
+            storage = c;
+            baterai = d;
+
+        }
+
+        public void CetakSpesifikasi() {
+            System.out.println("Kecepatan prosesor komputer:"+ prosesor);
+            System.out.println("Kapasitas memori:"+ memori);
+            System.out.println("Kapasitas Storage:"+ storage +"\n");
+            System.out.println();
+
+    public void diOverclock (int a){
+        prosesor = a;
+        System.out.println("Kecepatan prosesor komputer:"+ prosesor);
+    }
+
+        }
